@@ -1,0 +1,14 @@
+<div class="bg-light col-md-4">
+  <div>
+    <img
+      [src]="srcLink"
+      (error)="updateUrl()"
+      class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+      alt=""
+    />
+  </div>
+  <div>
+    <p>{{ name }}</p>
+    <p>{{ description }}</p>
+  </div>
+</div>

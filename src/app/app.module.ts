@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatButtonModule } from '@angular/material/button';
-import { MatMenuModule } from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { from } from 'rxjs';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginFromComponent } from './components/login-from/login-from.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { SingUpFromComponent } from './components/sing-up-from/sing-up-from.component';
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent],
+  declarations: [AppComponent, NavBarComponent, CategoriesComponent, LoginFromComponent, ProductComponent, ProductListComponent, SingUpFromComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatMenuModule,
+    NgbModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

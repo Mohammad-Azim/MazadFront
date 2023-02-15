@@ -1,0 +1,10 @@
+<div class="row my-4">
+  <div *ngFor="let product of products">
+    <app-product
+      name="{{ product.name }}"
+      description="{{ product.description }}"
+      default="../../../assets/images/defaultProduct.png"
+    >
+    </app-product>
+  </div>
+</div>

@@ -11,9 +11,9 @@ export class ProductListComponent {
 
   constructor(private productService: ProductService) {}
 
-  ngOnInit(): void {
-    this.productService
-      .getAll()
-      .subscribe((response) => (this.products = response.data));
+  async ngOnInit(): Promise<void> {
+    (await this.productService.getAll()).subscribe(
+      (response) => (this.products = response.data)
+    );
   }
 }

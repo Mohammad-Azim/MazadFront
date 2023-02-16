@@ -19,7 +19,15 @@ export class GenericService {
     this.apiUrl = GlobalComponent.ApiUrl;
   }
 
-  getAll(): Observable<BaseResponse> {
-    return this.http.get<BaseResponse>(this.apiUrl);
+  async getAll(): Promise<Observable<BaseResponse>> {
+    return await this.http.get<BaseResponse>(this.apiUrl);
+  }
+
+  async add(data: any): Promise<Observable<any>> {
+    return await this.http.post<any>(this.apiUrl, data, httpOptions);
+  }
+
+  async getById(id: string): Promise<Observable<BaseResponse>> {
+    return await this.http.get<BaseResponse>(this.apiUrl + `/${id}`);
   }
 }

@@ -10,6 +10,7 @@ export class ProductComponent {
   @Input() default!: string;
   @Input() name!: string;
   @Input() description!: string;
+  @Input() id!: string;
 
   updateUrl() {
     this.srcLink = this.default;

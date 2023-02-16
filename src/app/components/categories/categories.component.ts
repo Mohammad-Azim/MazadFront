@@ -10,9 +10,9 @@ export class CategoriesComponent {
   categories: any[] = [];
 
   constructor(private categoryService: CategoryService) {}
-  ngOnInit(): void {
-    this.categoryService
-      .getAll()
-      .subscribe((response) => (this.categories = response.data));
+  async ngOnInit(): Promise<void> {
+    (await this.categoryService.getAll()).subscribe(
+      (response) => (this.categories = response.data)
+    );
   }
 }

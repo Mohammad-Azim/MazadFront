@@ -15,6 +15,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { SingUpFromComponent } from './components/sing-up-from/sing-up-from.component';
 import { FormsModule } from '@angular/forms';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { MyIfDirective } from './directives/myIf/my-if.directive';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     ProductListComponent,
     SingUpFromComponent,
     ProductDetailsComponent,
+    MyIfDirective,
   ],
   imports: [
     BrowserModule,

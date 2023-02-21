@@ -1,13 +1,10 @@
 <div class="bg-light col-md-4">
-  <div>
-    <img
-      [src]="srcLink"
-      class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
-      alt=""
-    />
-  </div>
-  <div>
-    <p>{{ name }}</p>
-    <p>{{ description }}</p>
-  </div>
+  <app-product
+    id="{{ id }}"
+    srcLink="{{ srcLink }}"
+    default="../../../assets/images/defaultProduct.png"
+    description="{{ description }}"
+  >
+  </app-product>
+  <app-add-bid></app-add-bid>
 </div>

@@ -10,6 +10,7 @@ import { ProductService } from 'src/app/services/product/product.service';
 export class ProductDetailsComponent {
   @Input() default!: string;
   description!: string;
+  id!: number;
   name!: string;
   srcLink!: string;
 
@@ -27,9 +28,11 @@ export class ProductDetailsComponent {
     if (this.productId != null) {
       (await this.productService.getById(this.productId)).subscribe(
         (response) => {
+          this.id = response.data.id;
           this.name = response.data.name;
           this.srcLink = response.data.image;
           this.description = response.data.description;
+          console.log(response.data.image);
         }
       );
     }

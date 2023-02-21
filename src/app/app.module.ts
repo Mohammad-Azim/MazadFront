@@ -16,6 +16,7 @@ import { SingUpFromComponent } from './components/sing-up-from/sing-up-from.comp
 import { FormsModule } from '@angular/forms';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { MyIfDirective } from './directives/myIf/my-if.directive';
+import { AddBidComponent } from './components/add-bid/add-bid.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MyIfDirective } from './directives/myIf/my-if.directive';
     SingUpFromComponent,
     ProductDetailsComponent,
     MyIfDirective,
+    AddBidComponent,
   ],
   imports: [
     BrowserModule,

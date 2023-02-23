@@ -15,7 +15,7 @@ const httpOptions = {
 export class GenericService {
   public apiUrl: string;
 
-  constructor(private http: HttpClient) {
+  constructor(protected http: HttpClient) {
     this.apiUrl = GlobalComponent.ApiUrl;
   }
 

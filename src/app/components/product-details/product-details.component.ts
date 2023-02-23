@@ -10,7 +10,7 @@ import { ProductService } from 'src/app/services/product/product.service';
 export class ProductDetailsComponent {
   @Input() default!: string;
   description!: string;
-  id!: number;
+  id!: string;
   name!: string;
   srcLink!: string;
 

@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { MyIfDirective } from './directives/myIf/my-if.directive';
 import { AddBidComponent } from './components/add-bid/add-bid.component';
+import { ProductBidListComponent } from './components/product-bid-list/product-bid-list.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AddBidComponent } from './components/add-bid/add-bid.component';
     ProductDetailsComponent,
     MyIfDirective,
     AddBidComponent,
+    ProductBidListComponent,
   ],
   imports: [
     BrowserModule,
